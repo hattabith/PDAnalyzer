@@ -10,11 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="PD.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="PD.png" />
+    <Resource Include="img\PD.png" />
   </ItemGroup>
 
 </Project>

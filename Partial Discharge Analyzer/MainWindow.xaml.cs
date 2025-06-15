@@ -19,7 +19,9 @@ namespace Partial_Discharge_Analyzer
         public MainWindow()
         {
             InitializeComponent();
-            ConnComboBox.Items.Add("COM1");
+            ConnComboBox.ItemsSource = new List<string> { "192.168.88.1", "192.168.88.1:3000", "192.168.88.1:5000", "192.168.2.127" };
+
+
         }
         
     }

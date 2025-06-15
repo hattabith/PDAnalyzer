@@ -6,15 +6,29 @@
         xmlns:local="clr-namespace:Partial_Discharge_Analyzer"
         xmlns:NetworkInformation="clr-namespace:System.Net.NetworkInformation;assembly=System.Net.NetworkInformation" x:Class="Partial_Discharge_Analyzer.MainWindow"
         mc:Ignorable="d"
-        Title="PDAnalyzer: Partial Discharge Monitoring  &amp; Analysis Tool" Height="450" Width="800" Icon="/PD.png">
+        Title="PDAnalyzer: Partial Discharge Monitoring  &amp; Analysis Tool" Height="450" Width="800" Icon="/img/PD.png">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="4*"/>
-            <ColumnDefinition Width="21*"/>
+            <ColumnDefinition Width="350*"/>
+            <ColumnDefinition Width="350*"/>
         </Grid.ColumnDefinitions>
-        <Label Name="SelConnType" Content="Select connection type:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-        <Button Name="ConnBtn" Content="Connect" HorizontalAlignment="Left" Margin="170,13,0,0" VerticalAlignment="Top" Width="73" Grid.Column="1"/>
-        <ComboBox Name="ConnComboBox" HorizontalAlignment="Left" Margin="37,12,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="350*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Margin="5" Grid.Row="0" Grid.Column="0">            
+            <Label x:Name="SelConnType" Content="Connection type:" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.ColumnSpan="1" Margin="10,10,0,0" ToolTip="Select type of connection. Ethernet connection is prioriy"/>
+            <RadioButton x:Name="EthernetRBtn" Content="Ethernet" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Center" IsEnabled="True" IsChecked="True"/>
+            <RadioButton x:Name="USBRBtn" Content="USB" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Center" IsEnabled="True" ToolTip="Not yet implemented"/>
+            <RadioButton x:Name="COMRBtn" Content="COM" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Center" IsEnabled="False" ToolTip="Not yet implemented"/>
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal" Margin="5" Grid.Row="1" Grid.Column="0">
+            <Label x:Name="SelConnAddr" Content="Connection address:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.ColumnSpan="1"/>
+            <ComboBox x:Name="ConnComboBox" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="150" />
+            <Button x:Name="ConnBtn" Content="Connect" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="76" Height="22"/>
+        </StackPanel>
 
     </Grid>
 
