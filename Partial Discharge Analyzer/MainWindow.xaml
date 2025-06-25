@@ -29,9 +29,14 @@
         <StackPanel Orientation="Horizontal" Margin="5" Grid.Row="1" Grid.Column="0">
             <Label x:Name="SelConnAddr" Content="Connection address:" Foreground="{DynamicResource TextColor}" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.ColumnSpan="1"/>
             <ComboBox x:Name="ConnComboBox" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="150" SelectedIndex="0" />
-            <Button x:Name="AddConnEthernet" Content="Add" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="50" Height="22" />
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal" Margin="5, 50, 5, 5" Grid.Row="1" Grid.Column="0" >
+            <Button x:Name="FindBtn" Content="Find" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Height="22" />
+            <Button x:Name="AddConnEthernet" Content="Add" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="50" Height="22" Click="AddBtnClick" />
             <Button x:Name="ConnBtn" Content="Connect" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="76" Height="22"/>
         </StackPanel>
+
 
         <StackPanel Orientation="Vertical" Margin="5" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2">
             <ComboBox SelectionChanged="ThemeSelector_Changed" Margin="5" Width="100" SelectedItem="Light" SelectedIndex="0">
