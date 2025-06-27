@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Partial_Discharge_Analyzer"
         mc:Ignorable="d"
-        Title="Add IP Address" Height="150" Width="300" WindowStartupLocation="CenterOwner">
+        Title="Add IP Address" Height="180" Width="330" WindowStartupLocation="CenterOwner">
 
 
     <StackPanel Margin="10">
