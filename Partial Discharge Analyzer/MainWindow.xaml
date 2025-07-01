@@ -7,7 +7,7 @@
         xmlns:local="clr-namespace:Partial_Discharge_Analyzer"
         xmlns:NetworkInformation="clr-namespace:System.Net.NetworkInformation;assembly=System.Net.NetworkInformation" x:Class="Partial_Discharge_Analyzer.MainWindow"
         mc:Ignorable="d"
-        Title="PDAnalyzer: Partial Discharge Monitoring  &amp; Analysis Tool" MinHeight="400" Height="450" Width="800" MinWidth="800" Icon="/img/PD.png">
+        Title="PDAnalyzer: Partial Discharge Monitoring  &amp; Analysis Tool" MinHeight="400" Height="450" Width="800" MinWidth="800" Icon="/img/PD.png" WindowStartupLocation="CenterScreen">
  
     <Grid>
         <Grid.ColumnDefinitions>
